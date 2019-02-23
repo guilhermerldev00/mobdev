@@ -3,31 +3,42 @@
 	header{
 		#header{
 			position: absolute;
-	   		width: 92%;
+	   		width: 100%;
    			top: 35px;
-   			left: 70px;
+   			left: 15px;
 
 			#logo{
 				padding-left: 270px;
 
+				img{
+					padding-bottom: 8px;
+				}
+
 				h1{
 					display: inline-block;
-					font-size: 25px;
+					font-size: 22px;
 					font-weight: bold;
 					color: #FFF;
 				}
 			}
 			ul{
 				list-style: none;
-				margin-left: 50px;
+				margin-left: 30px;
 
 				li{
 					display: inline-block;
-					margin-right: 20px;
+					padding: 0px 15px 4px;
+					border: 1px solid transparent;
+					border-radius: 3px;
+
+					&:hover{
+						border: 1px solid #FF4500;
+					}
 
 					a{
 						color: #FFF;
-						font-size: 12px;
+						font-size: 11px;
+						font-weight: bold;
 
 						&:hover{
 							text-decoration: none;
@@ -42,6 +53,5 @@
 }
 
 #img-main{
-    width: 94%;
-    margin: 0px 40px;
+    width: 100%;
 }

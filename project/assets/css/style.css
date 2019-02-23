@@ -6784,77 +6784,220 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative; }
   #top header #header {
     position: absolute;
-    width: 92%;
+    width: 100%;
     top: 35px;
-    left: 70px; }
+    left: 15px; }
     #top header #header #logo {
       padding-left: 270px; }
+      #top header #header #logo img {
+        padding-bottom: 8px; }
       #top header #header #logo h1 {
         display: inline-block;
-        font-size: 25px;
+        font-size: 22px;
         font-weight: bold;
         color: #FFF; }
     #top header #header ul {
       list-style: none;
-      margin-left: 50px; }
+      margin-left: 30px; }
       #top header #header ul li {
         display: inline-block;
-        margin-right: 20px; }
+        padding: 0px 15px 4px;
+        border: 1px solid transparent;
+        border-radius: 3px; }
+        #top header #header ul li:hover {
+          border: 1px solid #FF4500; }
         #top header #header ul li a {
           color: #FFF;
-          font-size: 12px; }
+          font-size: 11px;
+          font-weight: bold; }
           #top header #header ul li a:hover {
             text-decoration: none;
             color: #FFF; }
 
 #img-main {
-  width: 94%;
-  margin: 0px 40px; }
+  width: 100%; }
+
+section#form {
+  position: fixed;
+  top: 155px;
+  right: 305px;
+  width: 310px;
+  height: 350px;
+  padding: 15px 30px;
+  background-color: #EEEEEE;
+  border-radius: 5px; }
+  section#form form legend {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px; }
+    section#form form legend:after {
+      content: "";
+      width: 310px;
+      line-height: 40px;
+      height: 1px;
+      background: #C0C0C0;
+      position: absolute;
+      left: -30px;
+      color: #FFF;
+      top: 43px;
+      text-align: center; }
+  section#form form label {
+    float: left;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 8px; }
+    section#form form label input, section#form form label select {
+      font-size: 12px;
+      width: 100%;
+      height: 32px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      border-bottom: 4px solid #808080;
+      padding-left: 10px; }
+      section#form form label input:focus, section#form form label select:focus {
+        outline: 0;
+        border-bottom: 5px solid #FF4500; }
+  section#form form button {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+    background-color: #FF4500;
+    color: #FFF;
+    border: none;
+    border-bottom: 5px solid #CC4500;
+    border-radius: 5px; }
 
 section#sub-title {
   position: absolute;
   top: 150px;
-  left: 310px;
+  left: 255px;
   width: 480px; }
   section#sub-title h4 {
     font-size: 32px;
     font-weight: bold;
     color: #FFF; }
 
-section#content {
+section#content-primary {
   margin: 50px 0; }
-  section#content h5 {
+  section#content-primary h5 {
     width: 50%;
     font-size: 20px;
     font-weight: bold;
     color: #000;
     margin-bottom: 20px; }
-  section#content h6 {
+  section#content-primary h6 {
     width: 350px;
     font-size: 13px;
     font-weight: 100; }
-  section#content ul#learn {
+  section#content-primary ul#learn {
     float: left;
     list-style: none;
     margin: 40px 0 0;
     padding: 0; }
-    section#content ul#learn li {
+    section#content-primary ul#learn li {
+      font-size: 14px;
+      font-weight: bold;
       float: left;
       width: 135px; }
-      section#content ul#learn li:nth-child(2) img {
-        padding: 0 30px; }
-      section#content ul#learn li:nth-child(3) img {
-        padding: 0 26px; }
-      section#content ul#learn li span {
+      section#content-primary ul#learn li:nth-child(2) img {
+        padding: 0 28px; }
+      section#content-primary ul#learn li:nth-child(3) img {
+        padding: 0 24px; }
+      section#content-primary ul#learn li span {
         float: left;
-        width: 100%; }
-      section#content ul#learn li#world {
+        width: 100%;
+        margin-top: 12px; }
+      section#content-primary ul#learn li#world {
         width: 160px; }
-        section#content ul#learn li#world img {
-          padding: 0 40px; }
+        section#content-primary ul#learn li#world img {
+          padding: 0 35px; }
+
+section#content-secondary {
+  float: left;
+  height: 400px;
+  width: 100%;
+  background-color: #2C2C2C;
+  margin-top: 50px;
+  padding-top: 50px; }
+  section#content-secondary h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF4500; }
+  section#content-secondary h6 {
+    font-size: 15px;
+    font-weight: 100;
+    color: #FFF; }
+
+footer {
+  float: left;
+  width: 100%;
+  margin-top: 50px; }
+  footer #first-list {
+    float: left;
+    display: inline-block;
+    width: 150px; }
+    footer #first-list img {
+      float: left;
+      width: 12px;
+      height: 13px; }
+    footer #first-list h6 {
+      font-size: 12px;
+      font-weight: bold; }
+    footer #first-list ul {
+      list-style: none;
+      padding: 0; }
+      footer #first-list ul li {
+        font-size: 14px;
+        font-weight: bold;
+        color: #FF4500; }
+  footer #second-list {
+    float: left;
+    display: inline-block;
+    width: 300px; }
+    footer #second-list img {
+      float: left;
+      width: 12px;
+      height: 13px; }
+    footer #second-list h6 {
+      font-size: 12px;
+      font-weight: bold; }
+    footer #second-list ul {
+      list-style: none;
+      padding: 0; }
+      footer #second-list ul#first-ul {
+        float: left;
+        margin-right: 50px; }
+      footer #second-list ul li {
+        font-size: 11px;
+        font-weight: 100;
+        padding-bottom: 15px; }
+  footer #social-media {
+    float: left;
+    width: 100%; }
+    footer #social-media img#facebook {
+      position: relative;
+      padding-right: 35px; }
+      footer #social-media img#facebook::after {
+        content: "";
+        width: 20px;
+        height: 40px;
+        background: #000;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        color: #000; }
+    footer #social-media img#instagram {
+      padding: 0px 35px 0px 35px; }
+    footer #social-media img#linkedin {
+      padding-left: 35px; }
 
 .container-custom {
   width: 100%;
-  padding: 0px 325px; }
+  padding: 0px 272px; }
 
 /*# sourceMappingURL=style.css.map */
