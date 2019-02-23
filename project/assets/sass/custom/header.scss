@@ -1,0 +1,47 @@
+#top{
+	position: relative;
+	header{
+		#header{
+			position: absolute;
+	   		width: 92%;
+   			top: 35px;
+   			left: 70px;
+
+			#logo{
+				padding-left: 270px;
+
+				h1{
+					display: inline-block;
+					font-size: 25px;
+					font-weight: bold;
+					color: #FFF;
+				}
+			}
+			ul{
+				list-style: none;
+				margin-left: 50px;
+
+				li{
+					display: inline-block;
+					margin-right: 20px;
+
+					a{
+						color: #FFF;
+						font-size: 12px;
+
+						&:hover{
+							text-decoration: none;
+							color: #FFF;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+#img-main{
+    width: 94%;
+    margin: 0px 40px;
+}

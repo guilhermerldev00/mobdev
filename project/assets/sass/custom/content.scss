@@ -1,0 +1,56 @@
+section{
+	&#content{
+		margin: 50px 0;
+		h5{
+			width: 50%;
+			font-size: 20px;
+			font-weight: bold;
+			color: #000;
+			margin-bottom: 20px;
+		}
+		h6{
+			width: 350px;
+			font-size: 13px;
+			font-weight: 100;
+		}
+
+		ul{
+			&#learn{
+				float: left;
+				list-style: none;
+				margin: 40px 0 0;
+				padding: 0;
+
+				li{
+					float: left;
+					width: 135px;
+
+					&:nth-child(2){
+						img{
+							padding: 0 30px;
+						}
+					}
+
+					&:nth-child(3){
+						img{
+							padding: 0 26px;
+						}
+					}
+
+					span{
+						float: left;
+						width: 100%;
+					}
+
+					&#world{
+						width: 160px;
+
+						img{
+							padding: 0 40px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
