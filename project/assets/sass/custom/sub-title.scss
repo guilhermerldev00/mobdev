@@ -7,13 +7,18 @@ section{
 
 		@media (max-width: 480px) {
 			left: 0;
-			width: 350px;
+			width: 400px;
+			padding: 0 25px;
 		}
 		
 		h4{
 			font-size: 32px;
 			font-weight: bold;
 			color: #FFF;
+
+			@media (max-width: 480px) {
+				font-size: 38px;
+			}
 		}
 	}
 }

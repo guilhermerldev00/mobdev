@@ -10,8 +10,8 @@ section{
 
 			@media (max-width: 480px) {
 				width: 100%;
-				text-align: center;
-				font-size: 34px;
+				font-size: 32px;
+				padding: 0px 25px;
 			}
 		}
 		h6{
@@ -24,7 +24,7 @@ section{
 				font-size: 25px;
 				font-weight: 400;
 				color: #A9A9A9;
-				padding: 0 15px;
+				padding: 0px 25px;
 			}
 		}
 
@@ -64,7 +64,7 @@ section{
 						    height: 100%;
 						    background: #DCDCDC;
 						    position: absolute;
-						    right: 27px;
+						    right: 28px;
 						    color: #FFF;
 						    top: -2px;
 						    text-align: center;
@@ -93,6 +93,10 @@ section{
 							padding: 0 28px;
 						}
 					}
+				}
+
+				@media (max-width: 480px) {
+					display: none;
 				}
 			}
 		}

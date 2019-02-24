@@ -14,6 +14,15 @@ section{
 			font-weight: bold;
 			color: #FF4500;
 			margin-bottom: 25px;
+
+			@media (max-width: 480px) {
+				float: initial;
+				width: 70%;
+				margin-left: auto;
+    			margin-right: auto;
+    			font-size: 34px;
+    			text-align: center;
+			}
 		}
 
 		h6{
@@ -22,6 +31,23 @@ section{
 			font-size: 15px;
 			font-weight: 100;
 			color: #FFF;
+
+			@media (max-width: 480px) {
+				float: initial;
+				width: 400px;
+    			margin-left: auto;
+    			margin-right: auto;
+    			text-align: center;
+    			padding: 0px 25px;
+    			font-size: 22px;
+    			line-height: 34px;
+			}
+		}
+
+		ul{
+			float: left;
+			list-style: none;
+			padding: 0;
 		}
 	}
 }
