@@ -7,6 +7,12 @@ section{
 			font-weight: bold;
 			color: #000;
 			margin-bottom: 20px;
+
+			@media (max-width: 480px) {
+				width: 100%;
+				text-align: center;
+				font-size: 34px;
+			}
 		}
 		h6{
 			width: 350px;
@@ -22,16 +28,11 @@ section{
 				padding: 0;
 
 				li{
+					position: relative;
 					font-size: 14px;
 					font-weight: bold;
 					float: left;
 					width: 135px;
-
-					&:nth-child(2){
-						img{
-							padding: 0 28px;
-						}
-					}
 
 					&:nth-child(3){
 						img{
@@ -48,8 +49,40 @@ section{
 					&#world{
 						width: 160px;
 
+						&:after{
+							content: "";
+						    width: 0.5px;
+						    line-height: 40px;
+						    height: 100%;
+						    background: #DCDCDC;
+						    position: absolute;
+						    right: 27px;
+						    color: #FFF;
+						    top: -2px;
+						    text-align: center;
+						}
+
 						img{
 							padding: 0 35px;
+						}
+					}
+
+					&#diagram{
+						&:after{
+							content: "";
+						    width: 0.5px;
+						    line-height: 40px;
+						    height: 100%;
+						    background: #DCDCDC;
+						    position: absolute;
+						    right: 23px;
+						    color: #FFF;
+						    top: -2px;
+						    text-align: center;
+						}
+
+						img{
+							padding: 0 28px;
 						}
 					}
 				}

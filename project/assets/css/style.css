@@ -6780,6 +6780,9 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+body {
+  float: left; }
+
 #top {
   position: relative; }
   #top header #header {
@@ -6787,18 +6790,22 @@ a.text-dark:hover, a.text-dark:focus {
     width: 100%;
     top: 35px;
     left: 15px; }
-    #top header #header #logo {
-      padding-left: 270px; }
-      #top header #header #logo img {
-        padding-bottom: 8px; }
-      #top header #header #logo h1 {
-        display: inline-block;
-        font-size: 22px;
-        font-weight: bold;
-        color: #FFF; }
+    @media (min-width: 1200px) {
+      #top header #header #logo {
+        padding-left: 270px; } }
+    #top header #header #logo img {
+      padding-bottom: 8px; }
+    #top header #header #logo h1 {
+      display: inline-block;
+      font-size: 22px;
+      font-weight: bold;
+      color: #FFF; }
     #top header #header ul {
       list-style: none;
       margin-left: 30px; }
+      @media (max-width: 1199px) {
+        #top header #header ul {
+          display: none; } }
       #top header #header ul li {
         display: inline-block;
         padding: 0px 15px 4px;
@@ -6816,6 +6823,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 #img-main {
   width: 100%; }
+  @media (max-width: 480px) {
+    #img-main {
+      height: 422px; } }
 
 section#form {
   position: fixed;
@@ -6825,7 +6835,20 @@ section#form {
   height: 350px;
   padding: 15px 30px;
   background-color: #EEEEEE;
+  border: 1px solid #DCDCDC;
   border-radius: 5px; }
+  @media (max-width: 480px) {
+    section#form {
+      display: none; } }
+  @media (max-width: 1250px) and (min-width: 1200px) {
+    section#form {
+      right: 18%; } }
+  @media (max-width: 1300px) and (min-width: 1250px) {
+    section#form {
+      right: 19%; } }
+  @media (max-width: 1400px) and (min-width: 1300px) {
+    section#form {
+      right: 22%; } }
   section#form form legend {
     position: relative;
     font-size: 20px;
@@ -6835,8 +6858,8 @@ section#form {
       content: "";
       width: 310px;
       line-height: 40px;
-      height: 1px;
-      background: #C0C0C0;
+      height: 1.5px;
+      background: #DCDCDC;
       position: absolute;
       left: -30px;
       color: #FFF;
@@ -6854,7 +6877,7 @@ section#form {
       margin-top: 5px;
       border: none;
       border-radius: 5px;
-      border-bottom: 4px solid #808080;
+      border-bottom: 3.5px solid #DCDCDC;
       padding-left: 10px; }
       section#form form label input:focus, section#form form label select:focus {
         outline: 0;
@@ -6877,6 +6900,10 @@ section#sub-title {
   top: 150px;
   left: 255px;
   width: 480px; }
+  @media (max-width: 480px) {
+    section#sub-title {
+      left: 0;
+      width: 350px; } }
   section#sub-title h4 {
     font-size: 32px;
     font-weight: bold;
@@ -6890,6 +6917,11 @@ section#content-primary {
     font-weight: bold;
     color: #000;
     margin-bottom: 20px; }
+    @media (max-width: 480px) {
+      section#content-primary h5 {
+        width: 100%;
+        text-align: center;
+        font-size: 34px; } }
   section#content-primary h6 {
     width: 350px;
     font-size: 13px;
@@ -6900,12 +6932,11 @@ section#content-primary {
     margin: 40px 0 0;
     padding: 0; }
     section#content-primary ul#learn li {
+      position: relative;
       font-size: 14px;
       font-weight: bold;
       float: left;
       width: 135px; }
-      section#content-primary ul#learn li:nth-child(2) img {
-        padding: 0 28px; }
       section#content-primary ul#learn li:nth-child(3) img {
         padding: 0 24px; }
       section#content-primary ul#learn li span {
@@ -6914,8 +6945,32 @@ section#content-primary {
         margin-top: 12px; }
       section#content-primary ul#learn li#world {
         width: 160px; }
+        section#content-primary ul#learn li#world:after {
+          content: "";
+          width: 0.5px;
+          line-height: 40px;
+          height: 100%;
+          background: #DCDCDC;
+          position: absolute;
+          right: 27px;
+          color: #FFF;
+          top: -2px;
+          text-align: center; }
         section#content-primary ul#learn li#world img {
           padding: 0 35px; }
+      section#content-primary ul#learn li#diagram:after {
+        content: "";
+        width: 0.5px;
+        line-height: 40px;
+        height: 100%;
+        background: #DCDCDC;
+        position: absolute;
+        right: 23px;
+        color: #FFF;
+        top: -2px;
+        text-align: center; }
+      section#content-primary ul#learn li#diagram img {
+        padding: 0 28px; }
 
 section#content-secondary {
   float: left;
@@ -6925,10 +6980,15 @@ section#content-secondary {
   margin-top: 50px;
   padding-top: 50px; }
   section#content-secondary h5 {
+    float: left;
+    width: 100%;
     font-size: 20px;
     font-weight: bold;
-    color: #FF4500; }
+    color: #FF4500;
+    margin-bottom: 25px; }
   section#content-secondary h6 {
+    float: left;
+    width: 420px;
     font-size: 15px;
     font-weight: 100;
     color: #FFF; }
@@ -6946,10 +7006,23 @@ footer {
       width: 12px;
       height: 13px; }
     footer #first-list h6 {
+      position: relative;
       font-size: 12px;
       font-weight: bold; }
+      footer #first-list h6:after {
+        content: "";
+        width: 80%;
+        line-height: 40px;
+        height: 1px;
+        background: #DCDCDC;
+        position: absolute;
+        left: 0;
+        color: #FFF;
+        top: 28px;
+        text-align: center; }
     footer #first-list ul {
       list-style: none;
+      margin-top: 30px;
       padding: 0; }
       footer #first-list ul li {
         font-size: 14px;
@@ -6964,14 +7037,29 @@ footer {
       width: 12px;
       height: 13px; }
     footer #second-list h6 {
+      position: relative;
       font-size: 12px;
       font-weight: bold; }
+      footer #second-list h6:after {
+        content: "";
+        width: 80%;
+        line-height: 40px;
+        height: 1px;
+        background: #DCDCDC;
+        position: absolute;
+        left: 0;
+        color: #FFF;
+        top: 28px;
+        text-align: center; }
     footer #second-list ul {
       list-style: none;
+      margin-top: 22px;
       padding: 0; }
       footer #second-list ul#first-ul {
         float: left;
         margin-right: 50px; }
+      footer #second-list ul#second-ul {
+        float: left; }
       footer #second-list ul li {
         font-size: 11px;
         font-weight: 100;
@@ -6979,25 +7067,69 @@ footer {
   footer #social-media {
     float: left;
     width: 100%; }
-    footer #social-media img#facebook {
+    footer #social-media #facebook {
       position: relative;
+      float: left;
       padding-right: 35px; }
-      footer #social-media img#facebook::after {
+      footer #social-media #facebook:after {
         content: "";
-        width: 20px;
-        height: 40px;
-        background: #000;
+        width: 1px;
+        line-height: 40px;
+        height: 90%;
+        background: #999999;
         position: absolute;
-        top: 0px;
-        left: 0px;
-        color: #000; }
-    footer #social-media img#instagram {
+        right: 0px;
+        color: #FFF;
+        top: 3px;
+        text-align: center; }
+    footer #social-media #instagram {
+      position: relative;
+      float: left;
       padding: 0px 35px 0px 35px; }
-    footer #social-media img#linkedin {
+      footer #social-media #instagram:after {
+        content: "";
+        width: 1px;
+        line-height: 40px;
+        height: 90%;
+        background: #999999;
+        position: absolute;
+        right: 1px;
+        color: #FFF;
+        top: 3px;
+        text-align: center; }
+    footer #social-media #linkedin {
+      float: left;
       padding-left: 35px; }
 
-.container-custom {
+section#footer-bottom {
+  float: left;
   width: 100%;
-  padding: 0px 272px; }
+  height: 55px;
+  background-color: #EEEEEE;
+  border: none;
+  border-top: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
+  margin-top: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  section#footer-bottom #copyright {
+    float: left;
+    padding: 0; }
+  section#footer-bottom p {
+    float: left;
+    font-size: 10px;
+    font-weight: 100; }
+  section#footer-bottom a {
+    float: left;
+    font-size: 10px;
+    font-weight: 100;
+    text-decoration: underline;
+    padding-left: 30px;
+    color: inherit; }
+
+@media (min-width: 1200px) {
+  .container-custom {
+    width: 100%;
+    padding: 0px 272px; } }
 
 /*# sourceMappingURL=style.css.map */

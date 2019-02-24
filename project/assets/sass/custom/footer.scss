@@ -15,12 +15,27 @@ footer{
 		}
 
 		h6{
+			position: relative;
 			font-size: 12px;
 			font-weight: bold;
+
+			&:after{
+				content: "";
+				width: 80%;
+				line-height: 40px;
+				height: 1px;
+				background: #DCDCDC;
+				position: absolute;
+				left: 0;
+				color: #FFF;
+				top: 28px;
+				text-align: center;
+			}
 		}
 
 		ul{
 			list-style: none;
+			margin-top: 30px;
 			padding: 0;
 			li{
 				font-size: 14px;
@@ -42,17 +57,36 @@ footer{
 		}
 
 		h6{
+			position: relative;
 			font-size: 12px;
 			font-weight: bold;
+
+			&:after{
+				content: "";
+				width: 80%;
+				line-height: 40px;
+				height: 1px;
+				background: #DCDCDC;
+				position: absolute;
+				left: 0;
+				color: #FFF;
+				top: 28px;
+				text-align: center;
+			}
 		}
 
 		ul{
 			list-style: none;
+			margin-top: 22px;
 			padding: 0;
 
 			&#first-ul{
 				float: left;
 				margin-right: 50px;
+			}
+
+			&#second-ul{
+				float: left;
 			}
 
 			li{
@@ -67,30 +101,48 @@ footer{
 		float: left;
 		width: 100%;
 
-		img{
-			&#facebook{
-   				position: relative;
-   				padding-right: 35px;
+		
+		#facebook{
+   			position: relative;
+   			float: left;
+   			padding-right: 35px;
 
-				&::after{
-					content: "";
-   					width: 20px;
-   					height: 40px;
-   					background: #000;
-   					position: absolute;
-   					top: 0px;
-   					left: 0px;
-   					color: #000;
-				}
+			&:after{
+				content: "";
+			    width: 1px;
+			    line-height: 40px;
+			    height: 90%;
+			    background: #999999;
+			    position: absolute;
+			    right: 0px;
+			    color: #FFF;
+			    top: 3px;
+			    text-align: center;
 			}
+		}
 
-			&#instagram{
-   				padding: 0px 35px 0px 35px;
-			}
+		#instagram{
+			position: relative;
+			float: left;
+   			padding: 0px 35px 0px 35px;
 
-			&#linkedin{
-				padding-left: 35px;
+   			&:after{
+				content: "";
+			    width: 1px;
+			    line-height: 40px;
+			    height: 90%;
+			    background: #999999;
+			    position: absolute;
+			    right: 1px;
+			    color: #FFF;
+			    top: 3px;
+			    text-align: center;
 			}
+		}
+
+		#linkedin{
+			float: left;
+			padding-left: 35px;
 		}
 	}
 }

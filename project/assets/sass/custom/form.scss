@@ -7,7 +7,24 @@ section{
 		height: 350px;
 		padding: 15px 30px;
 		background-color: #EEEEEE;
+		border: 1px solid #DCDCDC;
 		border-radius: 5px;
+
+		@media (max-width: 480px) {
+			display: none;
+		}
+
+		@media (max-width: 1250px) and (min-width: 1200px){
+			right: 18%;
+		}
+
+		@media (max-width: 1300px) and (min-width: 1250px){
+			right: 19%;
+		}
+
+		@media (max-width: 1400px) and (min-width: 1300px){
+			right: 22%;
+		}
 
 		form{
 			legend{
@@ -20,8 +37,8 @@ section{
 					content: "";
     				width: 310px;
     				line-height: 40px;
-    				height: 1px;
-    				background: #C0C0C0;
+    				height: 1.5px;
+    				background: #DCDCDC;
     				position: absolute;
     				left: -30px;
     				color: #FFF;
@@ -43,7 +60,7 @@ section{
 					margin-top: 5px;
 					border: none;
 					border-radius: 5px;
-					border-bottom: 4px solid #808080;
+					border-bottom: 3.5px solid #DCDCDC;
 					padding-left: 10px;
 
 					&:focus{

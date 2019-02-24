@@ -4,6 +4,11 @@ section{
 		top: 150px;
 		left: 255px;
 		width: 480px;
+
+		@media (max-width: 480px) {
+			left: 0;
+			width: 350px;
+		}
 		
 		h4{
 			font-size: 32px;
