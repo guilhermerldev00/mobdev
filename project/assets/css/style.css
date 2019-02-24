@@ -6895,6 +6895,68 @@ section#form {
     border-bottom: 5px solid #CC4500;
     border-radius: 5px; }
 
+section#form-mobile {
+  float: left;
+  width: auto;
+  height: 550px;
+  padding: 15px 20px;
+  background-color: #EEEEEE;
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+  margin: 60px 25px 15px; }
+  @media (min-width: 481px) {
+    section#form-mobile {
+      display: none; } }
+  section#form-mobile form legend {
+    position: relative;
+    width: 175px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto; }
+    section#form-mobile form legend:after {
+      content: "";
+      width: 368px;
+      line-height: 40px;
+      height: 1.5px;
+      background: #DCDCDC;
+      position: absolute;
+      left: -97px;
+      color: #FFF;
+      top: 115px;
+      text-align: center; }
+  section#form-mobile form label {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    margin-top: 8px; }
+    section#form-mobile form label input, section#form-mobile form label select {
+      font-size: 16px;
+      width: 100%;
+      height: 50px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      border-bottom: 3.5px solid #DCDCDC;
+      padding-left: 10px; }
+      section#form-mobile form label input:focus, section#form-mobile form label select:focus {
+        outline: 0;
+        border-bottom: 5px solid #FF4500; }
+  section#form-mobile form button {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    width: 100%;
+    height: 50px;
+    margin-top: 22px;
+    background-color: #FF4500;
+    color: #FFF;
+    border: none;
+    border-bottom: 5px solid #CC4500;
+    border-radius: 5px; }
+
 section#sub-title {
   position: absolute;
   top: 150px;
@@ -6926,6 +6988,13 @@ section#content-primary {
     width: 350px;
     font-size: 13px;
     font-weight: 100; }
+    @media (max-width: 480px) {
+      section#content-primary h6 {
+        width: auto;
+        font-size: 25px;
+        font-weight: 400;
+        color: #A9A9A9;
+        padding: 0 15px; } }
   section#content-primary ul#learn {
     float: left;
     list-style: none;
@@ -7001,14 +7070,25 @@ footer {
     float: left;
     display: inline-block;
     width: 150px; }
+    @media (max-width: 480px) {
+      footer #first-list {
+        width: 100%;
+        padding: 0 15px; } }
     footer #first-list img {
       float: left;
       width: 12px;
       height: 13px; }
+      @media (max-width: 480px) {
+        footer #first-list img {
+          width: 22px;
+          height: 22px; } }
     footer #first-list h6 {
       position: relative;
       font-size: 12px;
       font-weight: bold; }
+      @media (max-width: 480px) {
+        footer #first-list h6 {
+          font-size: 20px; } }
       footer #first-list h6:after {
         content: "";
         width: 80%;
@@ -7020,6 +7100,10 @@ footer {
         color: #FFF;
         top: 28px;
         text-align: center; }
+        @media (max-width: 480px) {
+          footer #first-list h6:after {
+            width: 100%;
+            top: 46px; } }
     footer #first-list ul {
       list-style: none;
       margin-top: 30px;
@@ -7028,18 +7112,39 @@ footer {
         font-size: 14px;
         font-weight: bold;
         color: #FF4500; }
+        @media (max-width: 480px) {
+          footer #first-list ul li {
+            font-size: 24px;
+            text-align: center;
+            border: 1px solid #000;
+            margin: 60px 0px;
+            padding: 10px 5px;
+            border: 1.5px solid #FF4500;
+            border-bottom: 6px solid #DCDCDC;
+            border-radius: 8px; } }
   footer #second-list {
     float: left;
     display: inline-block;
     width: 300px; }
+    @media (max-width: 480px) {
+      footer #second-list {
+        width: 100%;
+        padding: 0 15px; } }
     footer #second-list img {
       float: left;
       width: 12px;
       height: 13px; }
+      @media (max-width: 480px) {
+        footer #second-list img {
+          width: 22px;
+          height: 22px; } }
     footer #second-list h6 {
       position: relative;
       font-size: 12px;
       font-weight: bold; }
+      @media (max-width: 480px) {
+        footer #second-list h6 {
+          font-size: 20px; } }
       footer #second-list h6:after {
         content: "";
         width: 80%;
@@ -7051,6 +7156,10 @@ footer {
         color: #FFF;
         top: 28px;
         text-align: center; }
+        @media (max-width: 480px) {
+          footer #second-list h6:after {
+            width: 100%;
+            top: 45px; } }
     footer #second-list ul {
       list-style: none;
       margin-top: 22px;
@@ -7064,13 +7173,29 @@ footer {
         font-size: 11px;
         font-weight: 100;
         padding-bottom: 15px; }
+        @media (max-width: 480px) {
+          footer #second-list ul li {
+            font-size: 20px;
+            font-weight: 400;
+            color: #939191; } }
   footer #social-media {
     float: left;
     width: 100%; }
+    @media (max-width: 480px) {
+      footer #social-media {
+        margin: 30px 0px 20px 0px; } }
     footer #social-media #facebook {
       position: relative;
       float: left;
       padding-right: 35px; }
+      @media (max-width: 480px) {
+        footer #social-media #facebook {
+          width: 33%;
+          text-align: center;
+          padding-left: 20px; }
+          footer #social-media #facebook img {
+            width: 42px;
+            height: 42px; } }
       footer #social-media #facebook:after {
         content: "";
         width: 1px;
@@ -7086,6 +7211,13 @@ footer {
       position: relative;
       float: left;
       padding: 0px 35px 0px 35px; }
+      @media (max-width: 480px) {
+        footer #social-media #instagram {
+          width: 33%;
+          text-align: center; }
+          footer #social-media #instagram img {
+            width: 42px;
+            height: 42px; } }
       footer #social-media #instagram:after {
         content: "";
         width: 1px;
@@ -7100,6 +7232,14 @@ footer {
     footer #social-media #linkedin {
       float: left;
       padding-left: 35px; }
+      @media (max-width: 480px) {
+        footer #social-media #linkedin {
+          width: 33%;
+          text-align: center;
+          padding-right: 20px; }
+          footer #social-media #linkedin img {
+            width: 42px;
+            height: 42px; } }
 
 section#footer-bottom {
   float: left;
@@ -7112,6 +7252,9 @@ section#footer-bottom {
   margin-top: 45px;
   padding-top: 20px;
   padding-bottom: 20px; }
+  @media (max-width: 480px) {
+    section#footer-bottom {
+      height: 180px; } }
   section#footer-bottom #copyright {
     float: left;
     padding: 0; }
@@ -7119,6 +7262,14 @@ section#footer-bottom {
     float: left;
     font-size: 10px;
     font-weight: 100; }
+    @media (max-width: 480px) {
+      section#footer-bottom p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: #808080;
+        margin-bottom: 5px;
+        font-weight: 400; } }
   section#footer-bottom a {
     float: left;
     font-size: 10px;
@@ -7126,10 +7277,27 @@ section#footer-bottom {
     text-decoration: underline;
     padding-left: 30px;
     color: inherit; }
+    @media (max-width: 480px) {
+      section#footer-bottom a {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        color: #808080;
+        padding-left: 0;
+        margin-bottom: 35px;
+        font-weight: 400; } }
 
 @media (min-width: 1200px) {
   .container-custom {
     width: 100%;
     padding: 0px 272px; } }
+
+@media (min-width: 481px) {
+  .container-fluid-custom {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; } }
 
 /*# sourceMappingURL=style.css.map */

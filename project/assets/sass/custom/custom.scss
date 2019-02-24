@@ -4,3 +4,13 @@
 		padding: 0px 272px;
 	}
 }
+
+.container-fluid-custom{
+	@media (min-width: 481px) {
+		width: 100%;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+}

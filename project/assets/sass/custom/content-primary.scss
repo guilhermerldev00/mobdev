@@ -18,6 +18,14 @@ section{
 			width: 350px;
 			font-size: 13px;
 			font-weight: 100;
+
+			@media (max-width: 480px) {
+				width: auto;
+				font-size: 25px;
+				font-weight: 400;
+				color: #A9A9A9;
+				padding: 0 15px;
+			}
 		}
 
 		ul{
