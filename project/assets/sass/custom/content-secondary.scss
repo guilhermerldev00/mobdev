@@ -7,6 +7,11 @@ section{
 		margin-top: 50px;
 		padding-top: 50px;
 
+		@media (max-width: 480px) {
+			width: 480px;
+			height: 680px;
+		}
+
 		h5{
 			float: left;
 			width: 100%;
@@ -37,6 +42,7 @@ section{
 				width: 400px;
     			margin-left: auto;
     			margin-right: auto;
+    			margin-bottom: 30px;
     			text-align: center;
     			padding: 0px 25px;
     			font-size: 22px;
@@ -48,6 +54,17 @@ section{
 			float: left;
 			list-style: none;
 			padding: 0;
+
+			li{
+				img{
+					@media (max-width: 480px){
+						width: 400px;
+						margin-left: auto;
+    					margin-right: auto;
+    					border-radius: 10px;
+					}
+				}
+			}
 		}
 	}
 }

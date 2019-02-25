@@ -7203,6 +7203,9 @@ section#sub-title {
 
 section#content-primary {
   margin: 50px 0; }
+  @media (max-width: 480px) {
+    section#content-primary {
+      width: 480px; } }
   section#content-primary h5 {
     width: 50%;
     font-size: 20px;
@@ -7273,6 +7276,78 @@ section#content-primary {
     @media (max-width: 480px) {
       section#content-primary ul#learn {
         display: none; } }
+  section#content-primary ul#learn2 {
+    float: left;
+    list-style: none;
+    margin: 40px 0 0;
+    padding: 0; }
+    section#content-primary ul#learn2 li {
+      position: relative;
+      font-size: 14px;
+      font-weight: bold;
+      float: left;
+      width: 120px; }
+      section#content-primary ul#learn2 li:nth-child(3) img {
+        width: 125px;
+        padding: 0 24px; }
+      section#content-primary ul#learn2 li span {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-top: 12px; }
+      section#content-primary ul#learn2 li#world {
+        width: 165px; }
+        section#content-primary ul#learn2 li#world:after {
+          content: "";
+          width: 0.5px;
+          line-height: 40px;
+          height: 100%;
+          background: #DCDCDC;
+          position: absolute;
+          left: 172px;
+          color: #FFF;
+          top: -2px;
+          text-align: center; }
+        section#content-primary ul#learn2 li#world img {
+          width: 170px;
+          height: 55px;
+          padding: 0 35px; }
+      section#content-primary ul#learn2 li#diagram {
+        width: 170px; }
+        section#content-primary ul#learn2 li#diagram:after {
+          content: "";
+          width: 0.5px;
+          line-height: 40px;
+          height: 100%;
+          background: #DCDCDC;
+          position: absolute;
+          left: 160px;
+          color: #FFF;
+          top: -2px;
+          text-align: center; }
+        section#content-primary ul#learn2 li#diagram img {
+          width: 170px;
+          height: 55px;
+          padding: 0 28px; }
+      section#content-primary ul#learn2 li#flag {
+        width: 140px; }
+        section#content-primary ul#learn2 li#flag:after {
+          content: "";
+          width: 0.5px;
+          line-height: 40px;
+          height: 100%;
+          background: #DCDCDC;
+          position: absolute;
+          left: 154px;
+          color: #FFF;
+          top: -2px;
+          text-align: center; }
+        section#content-primary ul#learn2 li#flag img {
+          width: 125px;
+          height: 55px; }
+    @media (min-width: 481px) {
+      section#content-primary ul#learn2 {
+        display: none; } }
 
 section#content-secondary {
   float: left;
@@ -7281,6 +7356,10 @@ section#content-secondary {
   background-color: #2C2C2C;
   margin-top: 50px;
   padding-top: 50px; }
+  @media (max-width: 480px) {
+    section#content-secondary {
+      width: 480px;
+      height: 680px; } }
   section#content-secondary h5 {
     float: left;
     width: 100%;
@@ -7308,6 +7387,7 @@ section#content-secondary {
         width: 400px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
         text-align: center;
         padding: 0px 25px;
         font-size: 22px;
@@ -7316,6 +7396,12 @@ section#content-secondary {
     float: left;
     list-style: none;
     padding: 0; }
+    @media (max-width: 480px) {
+      section#content-secondary ul li img {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px; } }
 
 footer {
   float: left;

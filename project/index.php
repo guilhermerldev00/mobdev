@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Olá, mundo!</title>
+    <title>Dot</title>
   </head>
   <body>
     
@@ -72,11 +72,12 @@
             <li id="diagram"><img src="assets/img/diagram.svg" alt=""><span>Mind Setting</span></li>
             <li><img src="assets/img/flag.svg" alt=""><span>Your Future</span></li>
           </ul>
-          <!-- <ul id="learn2" class="owl-carousel owl-theme">
+
+          <ul id="learn2" class="owl-carousel owl-theme">
             <li id="world"><img src="assets/img/worldwide.svg" alt=""><span>Global Thinking</span></li>
             <li id="diagram"><img src="assets/img/diagram.svg" alt=""><span>Mind Setting</span></li>
-            <li><img src="assets/img/flag.svg" alt=""><span>Your Future</span></li>
-          </ul> -->
+            <li id="flag"><img src="assets/img/flag.svg" alt=""><span>Your Future</span></li>
+          </ul>
       </section>
     
       <!-- CAROUSEL -->
