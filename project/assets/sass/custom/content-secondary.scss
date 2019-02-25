@@ -7,9 +7,18 @@ section{
 		margin-top: 50px;
 		padding-top: 50px;
 
-		@media (max-width: 480px) {
-			width: 480px;
+		@media (min-width: 981px){
+			height: 450px;
+		}
+
+		@media (max-width: 565px) {
+			width: 100%;
 			height: 680px;
+		}
+
+		@media (max-width: 980px) and (min-width: 566px) {
+			width: 100%;
+			height: 565px;
 		}
 
 		h5{
@@ -20,7 +29,11 @@ section{
 			color: #FF4500;
 			margin-bottom: 25px;
 
-			@media (max-width: 480px) {
+			@media (min-width: 981px) and (max-width: 1200px){
+				padding-left: 15px;
+			}
+
+			@media (max-width: 980px) {
 				float: initial;
 				width: 70%;
 				margin-left: auto;
@@ -31,15 +44,18 @@ section{
 		}
 
 		h6{
-			float: left;
 			width: 420px;
 			font-size: 15px;
 			font-weight: 100;
 			color: #FFF;
 
-			@media (max-width: 480px) {
+			@media (min-width: 981px) and (max-width: 1200px){
+				padding-left: 15px;
+			}
+
+			@media (max-width: 980px) {
 				float: initial;
-				width: 400px;
+				width: 100%;
     			margin-left: auto;
     			margin-right: auto;
     			margin-bottom: 30px;
@@ -55,9 +71,22 @@ section{
 			list-style: none;
 			padding: 0;
 
+			@media (min-width: 981px){
+				width: 435px;
+			}
+
+			@media (min-width: 981px) and (max-width: 1200px){
+				padding-left: 15px;
+			}
+
 			li{
 				img{
-					@media (max-width: 480px){
+					@media (min-width: 981px){
+						width: 410px;
+    					border-radius: 5px;
+					}
+
+					@media (max-width: 980px){
 						width: 400px;
 						margin-left: auto;
     					margin-right: auto;
