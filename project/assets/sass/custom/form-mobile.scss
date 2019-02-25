@@ -13,7 +13,9 @@ section{
 		}
 
 		form{
+			float: left;
 			position: relative;
+			padding-top: 20px;
 
 			&:after{
 				content: "";
@@ -24,7 +26,7 @@ section{
     			position: absolute;
     			left: 0px;
     			color: #FFF;
-    			top: 115px;
+    			top: 130px;
     			text-align: center;
 			}
 
@@ -54,12 +56,12 @@ section{
 					margin-top: 5px;
 					border: none;
 					border-radius: 5px;
-					border-bottom: 3.5px solid #DCDCDC;
+					border-bottom: 4px solid #DCDCDC;
 					padding-left: 10px;
 
 					&:focus{
 						outline: 0;
-						border-bottom: 5px solid #FF4500;
+						border-bottom: 4px solid #FF4500;
 					}
 				}
 			}

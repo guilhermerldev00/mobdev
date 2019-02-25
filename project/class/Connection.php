@@ -13,7 +13,7 @@ class Connection {
 
 	public function getConnection() {
 		try {
-			$pdo = new PDO ($this->dsn, $this->user, $this->pass);
+			$pdo = new PDO($this->dsn, $this->user, $this->pass);
 			return $pdo;
 		} catch(PDOException $e) {
 			echo "Error:".$e->getMessage();

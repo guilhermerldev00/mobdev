@@ -1,3 +1,9 @@
+body{
+	@media (min-width: 768px){
+		overflow: initial !important;
+	}
+}
+
 .container-custom{
 	@media (min-width: 1301px){
 		width: 100%;

@@ -1,8 +1,9 @@
 $(document).ready(function() {
     $('#content-secondary ul').owlCarousel({
-        loop:true,
+        loop:false,
         margin:10,
         dots: true,
+        nav: true,
         autoplay:true,
         autoplayTimeout:1000,
         autoplayHoverPause:true,
@@ -16,13 +17,13 @@ $(document).ready(function() {
             },
             1000:{
                 items:1,
-                loop:true
+                loop:false
             }
         }
     });
 
     $('ul#learn2').owlCarousel({
-        loop:true,
+        loop:false,
         items: 3,
         margin:10,
         nav: true,
@@ -43,8 +44,30 @@ $(document).ready(function() {
             1000:{
                 items: 3,
                 dots: true,
-                loop:true
+                loop:false
             }
         }
     });
 });
+
+function changeDisplay() {
+    document.getElementById("mobile-options").display = "inline-block";
+}
+
+var menuMobile = document.getElementById("menu-open");
+
+menuMobile.addEventListener("click", function(){
+    document.getElementById("menu-mobile-topics").style.display="block";
+    document.getElementById("menu-open").style.display="none";
+    document.getElementById("menu-close").style.display="block";
+    document.getElementsByTagName("body")[0].style.overflow="hidden";
+})
+
+var menuMobile = document.getElementById("menu-close");
+
+menuMobile.addEventListener("click", function(){
+    document.getElementById("menu-mobile-topics").style.display="none";
+    document.getElementById("menu-open").style.display="block";
+    document.getElementById("menu-close").style.display="none";
+    document.getElementsByTagName("body")[0].style.overflow="initial";
+})

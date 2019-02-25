@@ -11,11 +11,17 @@
     <title>Dot</title>
   </head>
   <body>
+
+    <!-- CADASTRO -->
+    <?php include "elements/cadastro.php"; ?>
     
     <div class="container-fluid-custom">
 
       <!-- HEADER e TOP -->
       <?php include "elements/header.php"; ?>
+
+      <!-- MENU MOBILE -->
+      <?php include "elements/menu-mobile.php"; ?>
       
       <!-- FORM -->
       <?php include "elements/form.php"; ?>
